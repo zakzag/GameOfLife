@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life game</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="js/ext-core-debug-w-comments.js"></script>
+	<script type="text/javascript" src="js/Core.js"></script>
+	<script type="text/javascript" src="js/DrawingStyle.js"></script>
+	<script type="text/javascript" src="js/Renderable.js"></script>
+	<script type="text/javascript" src="js/HasStyle.js"></script>
+	<script type="text/javascript" src="js/HasPosition.js"></script>
+	<script type="text/javascript" src="js/Canvas.js"></script>
+	<script type="text/javascript" src="js/Matrix.js"></script>
+	<script type="text/javascript" src="js/UInt8Matrix.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript" src="js/Application.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/all.css" />
+	<script>
+		window.onload = function() {
+			console.info("onload started");
+
+			var application = new Life.Application();
+
+			application.run();
+		}
+	</script>
+	<style>
+		ul#main {
+
+		}
+
+		ul#main li {
+			display: inline
+		}
+
+		a {
+			color: #00ff00;
+			font-family: verdana;
+			font-size: 12px;
+		}
+
+	</style>
+</head>
+<body>
+	<ul id="main">
+		<li><a href="#" id="btnNext">Next</a></li>
+		<li><a href="#" id="btnRunStop">Run</a></li>
+		<li><a href="#" id="btnRandom">Random</a></li>
+		<li><a href="#" id="btnClear">Clear</a></li>
+	</ul>
+</body>
+</html>
