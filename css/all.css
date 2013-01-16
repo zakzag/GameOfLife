@@ -7,6 +7,17 @@
 */
 
 body {
-    background-color: black;
+    background-color: #ffffff;
 }
 
+ul#main { }
+
+ul#main li {
+	display: inline
+}
+
+a {
+	color: #00ff00;
+	font-family: verdana;
+	font-size: 12px;
+}

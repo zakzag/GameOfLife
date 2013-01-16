@@ -38,13 +38,13 @@ Ext.define("Life.Matrix", {
 		height: undefined,
 
 		cellStyle: new Life.DrawingStyle({
-			strokeStyle: "#111111",
-			fillStyle: "#00a000"
+			strokeStyle: "#eeeeee",
+			fillStyle: "#ff6fff"
 		}),
 
 		emptyStyle: new Life.DrawingStyle({
-			strokeStyle: "#111111",
-			fillStyle: "#000000"
+			strokeStyle: "#eeeeee",
+			fillStyle: "#ffffff"
 		})
 	},
 
@@ -134,7 +134,7 @@ Ext.define("Life.Matrix", {
 		canvas.applyStyle(this.cellStyle);
 
 		this.eachCell(function(x, y, value) {
-			ctx.fillStyle = (value == STATE_HIGH ? "#00ff00" : "#000000");
+			ctx.fillStyle = (value == STATE_HIGH ? this.cellStyle.fillStyle : this.emptyStyle.fillStyle);
 			ctx.fillRect(sx + x* cw, sy + y * ch, cw, ch);
 		});
 

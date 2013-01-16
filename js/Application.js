@@ -24,10 +24,10 @@ Ext.namespace('Life');
 			this.initConfig(config);
 
 			this.game = new Life.Game({
-				cols: 80,
-				rows: 80,
-				cellWidth: 8,
-				cellHeight: 8
+				cols: 64,
+				rows: 64,
+				cellWidth: 5,
+				cellHeight: 5
 			});
 
 			return true;
