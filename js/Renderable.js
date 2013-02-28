@@ -3,21 +3,27 @@
  */
 console.info("Life.Renderable loaded.");
 (function(E) {
-	Ext.define("Life.Renderable", {
-
-		canvas: undefined,
-
+	E.define("Life.Renderable", {
 		render: function() {
-			return true;
+			return this;
 		},
 
-		setCanvas: function(value) {
-			this.canvas = value
+		/**
+		 * @description container of the component.
+		 * @name container
+		 * @type {Object}
+		 */
+		container: null,
+
+		setContainer: function(value) {
+			if (this.container != value) {
+				/** @TODO: attach to the container */
+				this.container = value;
+			}
 		},
 
-		getCanvas: function() {
-			return this.canvas;
+		getContainer: function() {
+			return this.container;
 		}
-
 	});
 })(Ext)

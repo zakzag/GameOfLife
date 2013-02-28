@@ -6,19 +6,21 @@ console.info("Life.HasPosition loaded.");
 	E.define("Life.HasPosition", {
 
 		position: {
-			x: 0,
-			y: 0
+			top: 0,
+			left: 0
 		},
 
 		getPos: function() {
-			return this.position
+			return this.position;
 		},
 
-		setPosition: function(x, y) {
+		setPosition: function(left, top) {
 			this.position = {
-				x: x,
-				y: y
+				top: x,
+				left: y
 			}
+
+			console.info(this.container);
 		}
 	});
 })(Ext)

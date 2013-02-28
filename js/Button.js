@@ -13,44 +13,19 @@ console.info("Life.Button loaded.");
 	E.define("Life.Button", {
 
 		mixins: {
-			renderable: "Life.Renderable"
+			renderable: "Life.Renderable",
+			hasPosition: "Life.HasPosition"
 		},
 
 		config: {
-			parentNode: Ext.getBody()
+			text: ""
 		},
 
-		/** @var {string} content */
-		content: "",
-		/** @var {Array}  items       contains all items */
-		/** @var {string} */
-		nodeType: 'div',
-		/** @var {string} */
-		defaultClass: 'life-toolbar',
-		/** @var {string} */
-		id: undefined,
+		init: function() {
 
-		constructor: function(config) {
-			this.initConfig(config);
-		},
-
-		addItem: function(name, item) {
-			this.items.push(item);
-			this.namedItems[name] = item;
-		},
-
-		removeItem: function(name) {
-			delete this.items[name];
-		},
-
-		item: function(index) {
-			return (typeof index === 'number') ?
-				this.items[index] :
-				this.nameditems[index];
 		},
 
 		render: function() {
-
 
 		}
 	});

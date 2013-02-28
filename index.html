@@ -7,21 +7,27 @@
 	<script type="text/javascript" src="js/Core.js"></script>
 	<script type="text/javascript" src="js/DrawingStyle.js"></script>
 	<script type="text/javascript" src="js/Renderable.js"></script>
-	<script type="text/javascript" src="js/HasStyle.js"></script>
 	<script type="text/javascript" src="js/HasPosition.js"></script>
-	<script type="text/javascript" src="js/Canvas.js"></script>
-	<script type="text/javascript" src="js/Matrix.js"></script>
-	<script type="text/javascript" src="js/UInt8Matrix.js"></script>
-	<script type="text/javascript" src="js/Game.js"></script>
-	<script type="text/javascript" src="js/Application.js"></script>
+	<script type="text/javascript" src="js/HasItems.js"></script>
+	<script type="text/javascript" src="js/Button.js"></script>
+	<script type="text/javascript" src="js/Toolbar.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/all.css" />
 	<script>
 		window.onload = function() {
-			console.info("onload started");
+//			console.info("onload started");
+//
+//			var application = new Life.Application();
+//
+//			application.run();
+			console.dir(Life);
 
-			var application = new Life.Application();
+			var tb = new Life.Toolbar({
+				top: 100,
+				left: 100,
+				container: Ext.getBody()
+			});
 
-			application.run();
+			tb.render();
 		}
 	</script>
 </head>
